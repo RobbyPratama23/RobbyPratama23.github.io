@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bukti Pembayaran - Association of Informatics</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="order-details">
+            <div class="header">
+                <img class="logo" src="assets/logo-resto.jpeg" alt="logo-resto">
+            </div>
+            <div class="title"><ins>Bukti Pembayaran</ins></div>
+            <div class="info">
+                <p><strong>No. Pesanan:</strong> #12345</p>
+                <p><strong>Tanggal:</strong> <input type="date"></p>
+                <p><strong>Nama:</strong> Robby Pratama</p>
+                <p><strong>Alamat:</strong> Jl. Merdeka No. 15, Kota Balikpapan</p>
+            </div>
+            <div class="items">
+                <div class="title">Pesanan</div>
+                <div class="item">
+                    <img src="assets/nasi-goreng.jpeg" alt="Nasi Goreng Spesial" class="item-image">
+                    <div class="item-details">
+                        <div class="item-name">Nasi Goreng Spesial</div>
+                        <div class="item-price">Rp 25.000</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/es-teh-manis.jpeg" alt="Es Teh Manis" class="item-image">
+                    <div class="item-details">
+                        <div class="item-name">Es Teh Manis</div>
+                        <div class="item-price">Rp 5.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <p>Total Pesanan: Rp 30.000</p>
+                <p>Pajak: Rp 2.000</p>
+                <p>Total Tagihan: Rp 30.000</p>
+            </div>
+            <div class="payment-options">
+                <p><strong>Pilih Metode Pembayaran:</strong></p>
+                <div class="payment-option">
+                    <input type="radio" id="transfer" name="payment" value="bri">
+                    <label for="transfer">Bank BCA</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="e-wallet" name="payment" value="bri">
+                    <label for="e-wallet">Bank BRI</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="qris" name="payment" value="ovo">
+                    <label for="qris">OVO</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="cod" name="payment" value="gopay">
+                    <label for="cod">GoPay</label>
+                </div>
+            </div>
+            <button type="button">Konfirmasi Pembayaran</button>
+        </div>
+        <div class="name-details">
+            <p><strong>Nama:</strong> Robby Pratama</p>
+            <p><strong>NIM:</strong> 2309106113</p>
+        </div>
+    </body>
+</html> 
