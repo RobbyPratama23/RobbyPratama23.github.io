@@ -128,20 +128,24 @@
             <div class="row">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.682414399806!2d117.16425457466916!3d-0.472913299522453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67fb9ad3e942b%3A0x37f4d8c3eead2dd2!2sKupinang%20Kopi!5e0!3m2!1sid!2sid!4v1727022738616!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
             
-                <form action="">
+                <form action="submit.php" method="POST">
                     <div class="input-group">
                         <i data-feather="user"></i>
-                        <input type="text" placeholder="Nama">
+                        <input type="name" name="nama" placeholder="Nama">
                     </div>
                     <div class="input-group">
                         <i data-feather="mail"></i>
-                        <input type="text" placeholder="Email">
+                        <input type="email" name="email" placeholder="Email">
                     </div>
                     <div class="input-group">
                         <i data-feather="phone"></i>
-                        <input type="text" placeholder="No.HP">
+                        <input type="text" name="hp" placeholder="No.HP">
                     </div>
-                    <button class="btn">Kirim Pesan</button>
+                    <div class="input-group">
+                        <i data-feather="message-square"></i>
+                        <input type="text" name="pesan" placeholder="Pesan">
+                    </div>
+                    <button class="btn" type="submit">Kirim Pesan</button>
                 </form>
 
             </div>
