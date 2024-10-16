@@ -1,0 +1,84 @@
+:root {
+    --primary: #b6895b;
+    --bg: #010101;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #fff; 
+}
+
+
+.order {
+    max-width: 600px;
+    width: 100%;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: auto; 
+    margin-top: 100px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h2 span {
+    color: var(--primary);
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+
+.input-group input,
+.input-group textarea {
+    width: 90%;
+    padding: 10px 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    background: var(--bg);
+    color: #fff;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #b6895b;
+}
