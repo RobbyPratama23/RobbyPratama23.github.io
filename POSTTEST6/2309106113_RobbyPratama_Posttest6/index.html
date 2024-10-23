@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kopi Dua Hati</title>
+
+        <!--Buat Font Poppins-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!--Buat Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://unpkg.com/feather-icons"></script>
+
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <nav class="navbar">
+            <a href="#" class="navbar-logo">Kupinang<span>hati</span></a>
+
+            <div class="navbar-nav">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Kontak</a>
+            </div>
+
+            <div class="navbar-extra">
+                <a href="#" id="search"><i data-feather="search"></i></a>
+                <a href="#" id="shopping"><i data-feather="shopping-cart"></i></a>
+                <a href="#" id="sun"><i class="bi bi-moon" id="dark-mode"></i></a>
+                <a href="login.php" id="user"><i data-feather="user"></i></a>
+                <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+            </div>
+        </nav>
+
+        <!--Main Content-->
+        <section class="hero" id="home">
+            <main class="content">
+                <h1>Mari Nikmati Secangkir <span>Kopi</span> Dengan Dia</h1>
+                <p>Kopi terasa manis jika minum bersama dengan dia</p>
+                <button type="submit" class="cta" onclick="openPopup()">Beli Sekarang</button>
+                <div class="popup" id="popup">
+                    <img src="assets/logo-popup.jpg" alt="Logo Popup">
+                    <h2>Terima Kasih!</h2>
+                    <span>Kamu telah membeli Kopi. Terima Kasih!</span>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </main>
+        </section>
+        
+
+        <section class="about" id="about">
+            <h2><span>Tentang</span> Kami</h2>
+
+            <div class="row">
+                <div class="about-img">
+                    <img src="assets/img-about.jpg" alt="Tentang Kami">
+                </div>
+                <div class="content">
+                    <h3>Coffe Shop Website</h3>
+                    <p>Nama : Robby Pratama</p>
+                    <p>Kelas : C'23</p>
+                    <p>NIM : 2309106113</p>
+                    <p>Posttest : 3</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <h2><span>Menu</span> Kami</h2>
+            <p>Terdapat beberapa macam menu kopi yang bagus untuk kencan dengan dia</p>
+
+            <div class="row">
+                <div class="menu-card">
+                    <img src="assets/menu/1.jpg" alt="Coffe Latte" class="menu-card-img">
+                    <h3 class="menu-card-title">- Coffe Latte -</h3>
+                    <p class="menu-card-price">IDR 20K</p>
+                </div>
+                <div class="menu-card">
+                    <img src="assets/menu/2.jpg" alt="Espresso" class="menu-card-img">
+                    <h3 class="menu-card-title">- Espresso -</h3>
+                    <p class="menu-card-price">IDR 20K</p>
+                </div>
+                <div class="menu-card">
+                    <img src="assets/menu/3.jpg" alt="Americano" class="menu-card-img">
+                    <h3 class="menu-card-title">- Americano -</h3>
+                    <p class="menu-card-price">IDR 15K</p>
+                </div>
+                <div class="menu-card">
+                    <img src="assets/menu/4.jpg" alt="Long Black" class="menu-card-img">
+                    <h3 class="menu-card-title">- Long Black -</h3>
+                    <p class="menu-card-price">IDR 15K</p>
+                </div>
+                <div class="menu-card">
+                    <img src="assets/menu/5.jpg" alt="Cappucino" class="menu-card-img">
+                    <h3 class="menu-card-title">- Cappucino -</h3>
+                    <p class="menu-card-price">IDR 25K</p>
+                </div>
+                <div class="menu-card">
+                    <img src="assets/menu/6.jpg" alt="Caffe Latte" class="menu-card-img">
+                    <h3 class="menu-card-title">- Caffe Latte -</h3>
+                    <p class="menu-card-price">IDR 30K</p>
+                </div>
+                <div class="menu-card">
+                    <img src="assets/menu/7.jpg" alt="Mocha Latte" class="menu-card-img">
+                    <h3 class="menu-card-title">- Mocha Latte -</h3>
+                    <p class="menu-card-price">IDR 35K</p>
+                </div>
+                <div class="menu-card">
+                    <img src="assets/menu/8.jpg" alt="Macchiato" class="menu-card-img">
+                    <h3 class="menu-card-title">- Macchiato -</h3>
+                    <p class="menu-card-price">IDR 20K</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2><span>Kontak</span> Kami</h2>
+            <p>Beri pesan kepada kami jika ingin beli kopi/curhat</p>
+
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.682414399806!2d117.16425457466916!3d-0.472913299522453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67fb9ad3e942b%3A0x37f4d8c3eead2dd2!2sKupinang%20Kopi!5e0!3m2!1sid!2sid!4v1727022738616!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            
+                <form action="data.php" method="POST" enctype="multipart/form-data">
+                    <div class="input-group">
+                        <i data-feather="user"></i>
+                        <input type="name" name="nama" placeholder="Nama">
+                    </div>
+                    <div class="input-group">
+                        <i data-feather="mail"></i>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <i data-feather="phone"></i>
+                        <input type="text" name="hp" placeholder="No.HP">
+                    </div>
+                    <div class="input-group">
+                        <i data-feather="message-square"></i>
+                        <input type="text" name="pesan" placeholder="Pesan">
+                    </div>
+                    <div class="input-group">
+                        <i data-feather="file-text"></i>
+                        <input type="file" name="file">
+                    </div>
+                    <button class="btn" type="submit">Kirim Pesan</button>
+                </form>
+
+            </div>
+        </section>
+
+
+        <!--Footer-->
+        <footer>
+            <div class="socials">
+                <a href="#"><i data-feather="instagram"></i></a>
+                <a href="#"><i data-feather="twitter"></i></a>
+                <a href="#"><i data-feather="facebook"></i></a>
+            </div>
+
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Kontak</a>
+            </div>
+
+            <div class="credit">
+                <p>Created by <a href="">BobbyBot</a> Ideas From <a href="">SandhikaGalih</a> | &copy; 2024.</p>
+            </div>
+        </footer>
+        
+
+        <script>
+            feather.replace();
+        </script>
+        <script src="main.js"></script>
+    </body>
+</html>
